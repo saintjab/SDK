@@ -1,0 +1,20 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios15.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ElloSDK_ios
+@_exported import ElloSDK_ios
+import Foundation
+import Swift
+import _Concurrency
+public class ElloSDK {
+  public init()
+  public func getRestaurants(completion: @escaping ([ElloSDK_ios.Restaurant]) -> Swift.Void, failure: @escaping (Swift.Error) -> Swift.Void)
+  @objc deinit
+}
+public struct Restaurant : Swift.Identifiable {
+  public var id: Foundation.UUID
+  public var name: Swift.String
+  public var location: Swift.String
+  public var description: Swift.String?
+  public var imageURL: Foundation.URL?
+  public typealias ID = Foundation.UUID
+}
