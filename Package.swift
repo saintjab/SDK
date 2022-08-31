@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
 //        .binaryTarget(name: "ElloSDKLocal-iOS", path: "./Sources/ElloSDKLocal-iOS.xcframework")
         
-        .binaryTarget(name: "ElloSDK-iOS", url: "https://github.com/saintjab/jbmediabrowser/releases/download/2.0/ElloSDK-iOS.xcframework.zip", checksum: "43a11c4e30be134eab8d35a55dac3235b5b7da18a4ec20480247b746e17fc64a")
+        .binaryTarget(name: "ElloSDK-iOS", url: "https://github.com/saintjab/SDK/releases/download/1.0/ElloSDK-iOS.xcframework.zip", checksum: "43a11c4e30be134eab8d35a55dac3235b5b7da18a4ec20480247b746e17fc64a")
     ]
     
 )
